@@ -25,18 +25,26 @@
           ></textarea>
         </div>
         <form class="form">
-          <label for="characterAmountNumber">Number of Characters</label>
-          <input type="range" min="8" max="36" value="8" id="characterAmountRange">
-          <input type="number" min="8" max="36" value="8" id="characterAmountNumber">
+          <div>
+            <label for="characterAmountNumber">Number of Characters</label>
+            <input type="range" min="8" max="36" value="8" id="characterAmountRange">
+            <input class = "numberBox"type="number" min="8" max="36" value="8" id="characterAmountNumber">
+          </div>
 
+            <div>
           <label for="includeUppercase">Include Uppercase</label>
-          <input type="checkbox" id="includeUppercase">
+          <input class="uppercaseInput" type="checkbox" id="includeUppercase">
+            </div>
 
+            <div>
           <label for="includeNumbers">Include Numbers</label>
-          <input type="checkbox" id="includeNumbers">
+          <input class="numbersInput" type="checkbox" id="includeNumbers">
+            </div>
 
+            <div>
           <label for="includeSymbols">Include Symbols</label>
-          <input type="checkbox" id="includeSymbols">
+          <input class="symbolsInput" type="checkbox" id="includeSymbols">
+            </div>
 
         </form>
         <div class="card-footer">

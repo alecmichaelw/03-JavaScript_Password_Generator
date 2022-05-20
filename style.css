@@ -17,6 +17,14 @@ body {
   background-color: #f9fbfd;
 }
 
+.form {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  align-items: center;
+}
+
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -96,6 +104,27 @@ button[disabled] {
 .float-right {
   float: right;
 }
+
+.numberBox {
+  /* width: 2rem; */
+}
+
+.uppercaseInput {
+  width: 3rem;
+}
+
+.numbersInput {
+  width: 3rem;
+}
+
+.symbolsInput {
+  width: 4rem;
+}
+
+label {
+  font-weight: bold;
+}
+
 
 #password {
   -webkit-appearance: none;
