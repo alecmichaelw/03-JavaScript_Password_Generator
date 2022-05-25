@@ -105,9 +105,9 @@ button[disabled] {
   float: right;
 }
 
-.numberBox {
-  /* width: 2rem; */
-}
+/* .numberBox {
+  width: 2rem;
+} */
 
 .uppercaseInput {
   width: 3rem;

@@ -2,9 +2,27 @@ const characterAmountRange = document.getElementById
 ('characterAmountRange')
 const characterAmountNumber = document.getElementById
 ('characterAmountNumber')
+const includeUppercaseElement = document.getElementById
+('includeUppercase')
+const includeNumbersElement = document.getElementById
+('includeNumbers')
+const includeSymbolsElement = document.getElementById
+('includeSymbols')
+
+const form = document.getElementById
+('passwordGeneratorForm')
 
 characterAmountNumber.addEventListener('input', syncCharacterAmount)
 characterAmountRange.addEventListener('input', syncCharacterAmount)
+
+form.addEventListener('submit', e => {
+  const characterAmount = characterAmountNumber.value
+  const includeUppercase = includeUppercaseElement.Checked
+  const includeNumbers = includeNumbersElement.Checked
+  const includeSymbols = includeSymbolsElement.Checked
+  const password = generatePassword(characterAmount, includeUppercase,
+  includeNumbers, IncludeSymbols)
+})
 
 
 function syncCharacterAmount(e) {
@@ -14,16 +32,16 @@ function syncCharacterAmount(e) {
 }
 
 
-// // Assignment Code
-// var generateBtn = document.querySelector("#generate");
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
 
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
-//   passwordText.value = password;
+  passwordText.value = password;
 
-// }
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+}
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
