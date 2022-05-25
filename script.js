@@ -24,6 +24,17 @@ form.addEventListener('submit', e => {
   includeNumbers, IncludeSymbols)
 })
 
+function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
+  String.fromCharCode(65)
+}
+
+function fromLowToHigh(low, high) {
+  for (let i = low; i <= high; i++) {
+    array.push(i)
+  }
+  return array
+}
+
 
 function syncCharacterAmount(e) {
   const value = e.target.value
