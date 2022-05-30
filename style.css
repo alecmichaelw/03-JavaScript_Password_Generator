@@ -124,7 +124,7 @@ label {
   width: 3rem;
 }
 
-#password {
+#passwordDisplay {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
