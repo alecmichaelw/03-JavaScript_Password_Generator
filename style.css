@@ -7,35 +7,37 @@
 html,
 body,
 .wrapper {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #7c7c897a;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .form {
   display: grid;
   grid-template-columns: auto;
   row-gap: 1rem;
-  column-gap: 1rem;
+  column-gap: 2rem;
+  justify-content: center;
   align-items: center;
-}
-
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(202, 25%, 26%);
 }
 
 .card {
@@ -47,7 +49,11 @@ header {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 30px 80px;
+}
+
+.card-header {
+  text-align: center;
 }
 
 .card-header::after {
@@ -72,6 +78,7 @@ header {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+  margin-top: 5px;
 }
 
 .card-footer::after {
@@ -96,6 +103,10 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: rgb(218, 22, 22);
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
@@ -105,26 +116,13 @@ button[disabled] {
   float: right;
 }
 
-/* .numberBox {
-  width: 2rem;
-} */
-
-.uppercaseInput {
-  width: 3rem;
-}
-
-.numbersInput {
-  width: 3rem;
-}
-
-.symbolsInput {
-  width: 4rem;
-}
-
 label {
   font-weight: bold;
 }
 
+#characterAmountNumber {
+  width: 3rem;
+}
 
 #password {
   -webkit-appearance: none;
@@ -145,6 +143,7 @@ label {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  word-break: break-all;
 }
 
 @media (max-width: 690px) {
