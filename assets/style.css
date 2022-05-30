@@ -107,13 +107,13 @@ header {
   background-color: rgb(218, 22, 22);
 }
 
+.float-right {
+  float: right;
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
-}
-
-.float-right {
-  float: right;
 }
 
 label {
